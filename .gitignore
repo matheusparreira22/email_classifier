@@ -1,0 +1,39 @@
+# Ambiente virtual
+venv/
+ENV/
+env/
+
+# Cache e arquivos temporários
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.tmp
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configurações locais
+*.env
+*.ini
+
+# Modelos treinados (podemos salvar no repositório se quiser, mas melhor ignorar)
+*.pkl
+
+# Pastas de IDEs
+.vscode/
+.idea/
+
+# Dependências baixadas
+*.egg-info/
+dist/
+build/
+
+# Streamlit
+.streamlit/
+
+# Arquivos Jupyter Notebook checkpoint
+.ipynb_checkpoints/
