@@ -1,6 +1,7 @@
 import requests
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 # Use variável de ambiente para o token (mais seguro)
 HF_TOKEN = os.getenv("HF_TOKEN")  # Configure esta variável de ambiente
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"

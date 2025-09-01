@@ -2,7 +2,11 @@ import streamlit as st
 import time
 from model import predict_email
 from hf_api import classify_email
+from dotenv import load_dotenv
+import os
 
+load_dotenv()  # Carrega o .env
+HF_TOKEN = os.getenv('HF_TOKEN')
 st.title("📧 Classificador de Emails")
 st.write("Classifique emails como **produtivos** ou **improdutivos**")
 
